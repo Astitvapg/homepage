@@ -7,3 +7,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <App />
   </React.StrictMode>
 )
+const input = window.prompt("Enter your name:");
+if (input !== null) {
+  alert(`Hello, ${input}!`);
+} else {
+  alert("You did not enter a name.");
+}
+
