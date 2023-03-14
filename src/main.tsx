@@ -7,10 +7,15 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <App />
   </React.StrictMode>
 )
-const input = window.prompt("Enter your name:");
-if (input !== null) {
-  alert(`Hello, ${input}!`);
-} else {
-  alert("You did not enter a name.");
-}
+// app.ts file
+
+// Define a variable for the website owner's name
+const websiteOwner: string = 'Astitva Singh';
+
+// Get the heading element from the HTML file
+const heading = document.querySelector('h1');
+
+// Set the content of the heading to include the website owner's name
+heading.textContent = `Website created by ${websiteOwner}`;
+
 
